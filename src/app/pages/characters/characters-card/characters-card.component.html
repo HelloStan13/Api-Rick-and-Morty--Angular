@@ -1,0 +1,18 @@
+<div class="container">
+<div  class="wrapper">
+<div class="card" *ngIf="character">
+  <img class="character__image" src="{{character.image}}" alt="{{character.name}}">
+ <h1 class="enclosed">
+  <span>Name: {{character.name}}</span> 
+  <br>
+  <span>Gender: {{character.gender}}</span> 
+  <br>
+  <span>Episode Count: {{character.episode.length}}</span>
+  <br>
+  <span>Specie: {{character.species}}</span>
+  <br>
+  <span>Created: {{character.created}}</span>
+</h1>
+</div>
+</div>
+</div>

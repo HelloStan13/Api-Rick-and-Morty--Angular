@@ -1,0 +1,82 @@
+
+.character__image {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.wrapper {
+  position: relative;
+  perspective: 70em;
+  display: grid;
+  transform-style: preserve-3d;
+}
+
+.card {
+  grid-area: 1 / 1;
+  height: 100px;
+  width: 500px;
+  transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+  background: rgba(175, 255, 159, 0.88);
+  display: flex;
+  padding: 10px;
+  color: #000;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  box-shadow: 0 10px 30px -3px rgba(0,0,0,.1);
+
+  
+}
+
+h1 {
+  font-size: 20px;
+}
+span{
+  color: aliceblue;
+}
+
+.card .enclosed {
+  background: #000;
+  line-height: 1;
+  padding: 5px 5px;
+  display: inline-block;
+  transform: translate(-4px, 4px) scale(0.75);
+  transform-origin: right center;
+  font-size: 15px;
+}
+
+.wrapper:before {
+  --bw: 7px;
+  grid-area: 1 / 1;
+  content: '';
+  backface-visibility: hidden;
+  height: 121px;
+  width: 600px;
+  margin-top: calc(-1 * var(--bw));
+  margin-left: calc(-1 * var(--bw));
+  background: transparent;
+  transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+  pointer-events: none;
+  border: var(--bw) solid #000;
+  box-sizing: content-box;
+}
+
+
+.wrapper:hover > div,
+.wrapper:hover:before {
+  transform: none;
+}
+
+
+.wrapper > div,
+.wrapper:before {
+  will-change: transform;
+  transition: .3s transform cubic-bezier(.25,.46,.45,1);
+}
+
+
+html,
+body {
+  height: 100%; 
+  
+}
+
