@@ -6,7 +6,11 @@ Documentación https://rickandmortyapi.com/
 
 Diseño de Api
 
-![Api Gif](https://user-images.githubusercontent.com/92740455/174492915-6f1e3dd9-313f-441b-ae6e-e1c59a00decf.gif)
+
+
+https://user-images.githubusercontent.com/92740455/174493281-6ff8f1e9-b54c-46e2-8939-c991057e36bc.mp4
+
+
 
 
 
